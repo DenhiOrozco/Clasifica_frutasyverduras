@@ -1,7 +1,7 @@
 numpy==1.16.4
 streamlit==0.52.1
 pillow
-keras 2.4.3 0
+keras 2.4.3
 keras-applications 1.0.8 py_1
 keras-base 2.4.3 py_0
 keras-preprocessing 1.1.0 py_1
