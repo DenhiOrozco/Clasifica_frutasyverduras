@@ -1,4 +1,3 @@
-pip install tensorflow
 import streamlit as st
 
 siteHeader = st.beta_container()
