@@ -13,55 +13,55 @@ from img_classification import teachable_machine_classification
 uploaded_file = st.file_uploader("Choose an image of a fruit or vegetable ...", type="jpg")
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    st.image(image, caption='Uploaded MRI.', use_column_width=True)
+    st.image(image, caption='Uploaded Fruit or Vegetable.', use_column_width=True)
     st.write("")
     st.write("Classifying...")
     label = teachable_machine_classification(image, 'keras_model.h5')
     if label ==0:
-        print('Sandía')
+        st.write('Sandía')
     elif label ==1:
-        print('Tomate')
+        st.write('Tomate')
     elif label ==2:
-        print('Papa')
+        st.write('Papa')
     elif label ==3:
-        print('Piña')
+        st.write('Piña')
     elif label ==4:
-        print('Pera')
+        st.write('Pera')
     elif label ==5:
-        print('Naranja')
+        st.write('Naranja')
     elif label ==6:
-        print('Cebolla')
+        st.write('Cebolla')
     elif label ==7:
-        print('Mango')
+        st.write('Mango')
     elif label ==8:
-        print('Limón')
+        st.write('Limón')
     elif label ==9:
-        print('Uvas')
+        st.write('Uvas')
     elif label ==10:
-        print('Gengibre')
+        st.write('Gengibre')
     elif label ==11:
-        print('Ajo')
+        st.write('Ajo')
     elif label ==12:
-        print('Berenjena')
+        st.write('Berenjena')
     elif label ==13:
-        print('Pepino')
+        st.write('Pepino')
     elif label ==14:
-        print('Elote')
+        st.write('Elote')
     elif label ==15:
-        print('Chiles')
+        st.write('Chiles')
     elif label ==16:
-        print('Coliflor')
+        st.write('Coliflor')
     elif label ==17:
-        print('Zanahoria')
+        st.write('Zanahoria')
     elif label ==18:
-        print('Pimiento')
+        st.write('Pimiento')
     elif label ==19:
-        print('Col')
+        st.write('Col')
     elif label ==20:
-        print('Betabel')
+        st.write('Betabel')
     elif label ==21:
-        print('Plátano')
+        st.write('Plátano')
     elif label ==22:
-        print('Manzana')
+        st.write('Manzana')
     else:
-        print('No te pases, ¿qué es eso?')
+        st.write('No te pases, ¿qué es eso?')
