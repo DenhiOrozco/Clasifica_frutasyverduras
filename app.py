@@ -10,8 +10,8 @@ from img_classification import teachable_machine_classification
 
 
 
-#uploaded_file = st.file_uploader("Choose an image of a fruit or vegetable ...", type="jpg")
-#if uploaded_file is not None:
+uploaded_file = st.file_uploader("Choose an image of a fruit or vegetable ...", type="jpg")
+if uploaded_file is not None:
     image = Image.open(uploaded_file)
     st.image(image, caption='Uploaded MRI.', use_column_width=True)
     st.write("")
